@@ -27,12 +27,14 @@ function App() {
         <div>
         <Header name={uName} />
         <Router>
+          <div className='flex flex-row'>
         <SideBar />
-        <Body />
+        <Body className="mx-auto"/>
+        </div>
         </Router>
         
         
-        <Footer />
+        <Footer/>
         </div>}
 
 
