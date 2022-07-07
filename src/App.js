@@ -5,8 +5,11 @@ import Header from './Components/Header';
 import Login from './Components/Login';
 import Reports from './Components/Reports';
 import SideBar from './Components/Sidebar';
+import { useSelector } from 'react-redux';
 
 function App() {
+  const loggedIn = useSelector(state=>state.login.value.loggedIn);
+  const uName = useSelector(state=>state.login.value.uName);
   return (
     <div className="App">
       <div className="">
@@ -19,12 +22,14 @@ function App() {
         **product reports
         **quality reports
         */}
-        <Login />
-        <Header />
+        {(!loggedIn)?<Login />:
+        <div>
+        <Header name={uName} />
         <SideBar />
         <AutoMode />
         <Reports />
         <Footer />
+        </div>}
 
 
       </div>
