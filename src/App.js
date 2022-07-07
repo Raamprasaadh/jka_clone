@@ -1,11 +1,12 @@
 import './App.css';
-import AutoMode from './Components/AutoMode';
+
 import Footer from './Components/Footer';
 import Header from './Components/Header';
 import Login from './Components/Login';
-import Reports from './Components/Reports';
 import SideBar from './Components/Sidebar';
 import { useSelector } from 'react-redux';
+import { BrowserRouter as  Router} from "react-router-dom"
+import Body from './Components/Body';
 
 function App() {
   const loggedIn = useSelector(state=>state.login.value.loggedIn);
@@ -25,9 +26,12 @@ function App() {
         {(!loggedIn)?<Login />:
         <div>
         <Header name={uName} />
+        <Router>
         <SideBar />
-        <AutoMode />
-        <Reports />
+        <Body />
+        </Router>
+        
+        
         <Footer />
         </div>}
 

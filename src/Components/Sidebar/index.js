@@ -1,7 +1,9 @@
+import { Link } from "react-router-dom";
+
 function SideBar() {
     return ( <div className="flex flex-col divide-y-2">
-        <a href="./">AutoMode</a>
-        <a href="./">Reports</a>
+          <Link to="/prod">AutoMode</Link>
+          <Link to="/reports">Reports</Link>
         <a href="./">Defects</a>
         <a href="./">About</a>
     </div> );
