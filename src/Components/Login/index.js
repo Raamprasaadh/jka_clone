@@ -10,7 +10,7 @@ function Login() {
     return ( <div className="flex flex-row h-full">
         <div className="w-1/2 h-2/3 flex flex-col">
             <div className="w-20 h-32 bg-red-600 mx-40 text-white py-auto"></div>
-            <span className="w-20 mx-40 font-medium">JIDOKA</span>
+            <span className="w-20 mx-40 font-medium">HEADING</span>
             <div className="text-black text-5xl font-bold ml-40 text-left mt-44">Welcome</div>
             
         </div>

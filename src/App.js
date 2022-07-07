@@ -29,7 +29,9 @@ function App() {
         <Router>
           <div className='flex flex-row'>
         <SideBar />
-        <Body className="mx-auto"/>
+        <div className="bg-gray-300">
+        <Body/>
+        </div>
         </div>
         </Router>
         

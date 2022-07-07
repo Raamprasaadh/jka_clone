@@ -4,10 +4,9 @@ import Reports from "../Reports";
 
 function Body() {
   return (
-    <div>
+    <div className="bg-gray-300">
       <Routes>
         <Route exact path="/prod" element={<AutoMode />} />
-
         <Route path="/reports" element={<Reports />} />
       </Routes>
     </div>
